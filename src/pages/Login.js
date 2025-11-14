@@ -12,6 +12,8 @@ export default function Login(){
   const handleLogin = async (e) => {
     if (e && e.preventDefault) e.preventDefault();
     setError('');
+    // console.log("👉 FRONTEND sending:", { email, password });
+
     if (!email.trim() || !password) {
       setError('Please enter email and password');
       return;
